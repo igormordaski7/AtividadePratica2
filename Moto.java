@@ -2,8 +2,8 @@ public class Moto extends Veiculo {
 
     private int cilindrada;
 
-    public Moto(String marca, String modelo, int anoFabricacao, int cilindrada) {
-        super(marca, modelo, anoFabricacao);
+    public Moto(String marca, String modelo, int anoFabricacao, int cilindrada, String placa) {
+        super(marca, modelo, anoFabricacao, placa);
         this.cilindrada = cilindrada;
     }
 
@@ -18,9 +18,7 @@ public class Moto extends Veiculo {
     @Override
     public String toString() {
         return super.toString() + 
-        "Cilindrada: " + cilindrada;
+        "\nCilindrada: " + cilindrada;  
     }
-
-    
-    
 }
+
