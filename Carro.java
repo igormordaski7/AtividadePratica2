@@ -2,8 +2,8 @@ public class Carro extends Veiculo {
 
     private String tipoTransmissao;
 
-    public Carro(String marca, String modelo, int anoFabricacao, String tipoTransmissao) {
-        super(marca, modelo, anoFabricacao);
+    public Carro(String marca, String modelo, int anoFabricacao, String tipoTransmissao, String placa) {
+        super(marca, modelo, anoFabricacao, placa);
         this.tipoTransmissao = tipoTransmissao;
     }
 
@@ -20,7 +20,4 @@ public class Carro extends Veiculo {
         return super.toString() + 
         "\nTipo de Transmissão: " + tipoTransmissao;
     }
-
-    
-    
 }
