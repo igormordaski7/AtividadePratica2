@@ -2,8 +2,8 @@ public class Caminhao extends Veiculo {
 
     private double cargaMax;
 
-    public Caminhao(String marca, String modelo, int anoFabricacao, double cargaMax) {
-        super(marca, modelo, anoFabricacao);
+    public Caminhao(String marca, String modelo, int anoFabricacao, double cargaMax, String placa) {
+        super(marca, modelo, anoFabricacao, placa);
         this.cargaMax = cargaMax;
     }
 
@@ -18,9 +18,10 @@ public class Caminhao extends Veiculo {
     @Override
     public String toString() {
         return super.toString() + 
-        "Carga Máxima: " + cargaMax;
+        "\nCarga Máxima: " + cargaMax;
     }
     
     
     
 }
+
